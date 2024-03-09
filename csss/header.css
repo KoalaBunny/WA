@@ -1,0 +1,101 @@
+/* Mobile first view */
+header {
+    background-color:#161813;
+    overflow:hidden;
+   
+  }
+
+
+h1 {
+    color:aliceblue;
+    float: left;
+    padding: 0 20px;
+    text-align: center;
+    width: 100%;
+    
+  }
+  
+#hamburger_checkbox {
+    display: none;
+  }
+   
+#blueicon_image {
+    background-color:#161813;
+    display:block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 12%;
+  }
+
+  /* show or hide the menu */
+  #hamburger_checkbox:not(:checked) + nav {
+    display: none;
+  }
+
+  nav a {
+    color:white;
+    float:left;
+    font-size:17px;
+    padding: 30px 20px;
+    text-align:center;
+    text-decoration:none;
+    width: 100%;
+
+  }
+
+  /* set nav sticky to top */
+  header {
+    position: sticky;
+    top:0;
+   }
+  
+
+  /* Invert colors on mouse hover */
+  nav a:hover {
+    transform: scale(1.2);
+    background-color: whitesmoke;
+    color: black;
+  }
+
+  /* Invert colors on tabe key focus */
+  nav a:focus {
+    background-color: whitesmoke;
+    color: black;
+    outline:none;
+  }
+
+ /* Highlight the current link */
+  .active_nav{
+    background-color: #2e5397;
+    color: whitesmoke;
+  }
+
+ /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* Hide the hamburger icon for menu */
+  #blueicon_image {
+    display: none;
+  }
+
+/* show the nav links */
+  #hamburger_checkbox:not(:checked) + nav{
+    display: block;
+  }
+
+  h1{
+    text-align: left;
+    width: 390px;
+  }
+
+  nav {
+    float: right;
+  }
+
+  nav a {
+    width:auto;
+  }
+
+} 
+  

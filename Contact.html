@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="descrition" content="WA Western Australia"/>
+        <title>WA Australia</title> 
+        <link rel="icon" type="image/x-icon" href="images/WAmapicon.jpg" >
+        <link rel="stylesheet" href="csss/general.css"/>
+        <link rel="stylesheet" href="csss/contact.css"/>
+        <link rel="stylesheet" href="csss/header.css"/>
+        <link rel="stylesheet" href="csss/footer.css"/>
+
+
+    </head>
+
+    <body>
+        <header>
+            <h1>Colorful WA Australia</h1>
+            <label for="hamburger_checkbox">
+                <img src="images/blueburger.png" alt="Menu" id="blueicon_image">
+            </label> 
+            <input type="Checkbox" id="hamburger_checkbox">
+            <nav>
+                <a href="index.html" >Home</a>
+                <a href="photos.html">Photo Gallery</a>
+                <a href="history.html">History</a>
+                <a href="Contact.html" class="active_nav">Contact</a>
+            </nav>
+        
+         </header>
+         
+
+         <form id="contact_form" method="post">
+
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" autocomplete="given-name">
+
+            <label for="Last-name">Last Name:</label><br />
+            <input type="text" id="Last-name" name="Last-name" autocomplete="Family-name"/><br />
+
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" autocomplete="email"/><br />
+
+            <label for="mobile">Mobile:</label><br/>
+            <input type="text" id="mobile" name="mobile" autocomplete="tel"/><br /><br />
+
+            <label for="message">message:</label><br/>
+            <textarea id="message" name="message"></textarea><br /><br />
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+
+         </form>
+
+
+
+
+    <footer>
+        <p>
+            <span property="dct:title">WA Australia &copy;</span> by 
+            <span property="cc:attributionName">Veronica Huang</span> is licensed under
+            <br>
+            <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" 
+            rel="license noopener noreferrer" >CC BY-NC-ND 4.0
+            <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+            <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+            <img  src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="">
+            <img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt="">
+            </a>
+        </p>
+    </footer>
+
+    </body>
+
+</html>
